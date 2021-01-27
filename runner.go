@@ -9,7 +9,9 @@ import (
 
 // GRPCServerRunner runs a GRPC server.
 type GRPCServerRunner struct {
-	Server        *grpc.Server
+	// Server is the GRPC server to serve.
+	Server *grpc.Server
+	// ListenAddress is the address to serve on.
 	ListenAddress string
 }
 
