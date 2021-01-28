@@ -26,7 +26,7 @@ func main() {
 	server := grpc.NewServer()
 
 	// Create and configure the GRPC server runner.
-	runner := gracegrpcserverrunner.GRPCServerRunner{
+	runner := &gracegrpcserverrunner.GRPCServerRunner{
 		Server:        server,
 		ListenAddress: ":9090",
 	}
